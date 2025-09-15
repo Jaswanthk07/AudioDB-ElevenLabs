@@ -113,7 +113,7 @@ export default function TextToSpeech() {
   const [error, setError] = useState("");
   const audioRef = useRef(null);
 
-  const API_BASE_URL = "https://audiodb-elevenlabs-1.onrender.com";
+  const API_BASE_URL = "http://localhost:5000";
 
   // Get flag emoji, handling both emoji flags and country codes
   const getFlag = (flag, languageCode) => {
