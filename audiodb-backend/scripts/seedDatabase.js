@@ -6,11 +6,21 @@ import Audio from "../models/audio.js";
 dotenv.config();
 
 // Sample audio data with working public audio URLs
+// Language data with all required fields
+const languages = {
+  english: { code: "EN", flag: "🇺🇸", display: "English" },
+  arabic: { code: "AR", flag: "🇸🇦", display: "العربية" },
+  russian: { code: "RU", flag: "RU", display: "Русский" },
+  japanese: { code: "JA", flag: "🇯🇵", display: "日本語" },
+};
+
 const sampleAudioFiles = [
   {
     language: "english",
-    audioUrl:
-      "https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+    languageCode: languages.english.code,
+    flag: languages.english.flag,
+    displayName: languages.english.display,
+    audioUrl: "/uploads/english.ogg",
     duration: 30,
     fileSize: 480000,
     sampleText:
@@ -23,10 +33,12 @@ const sampleAudioFiles = [
   },
   {
     language: "arabic",
-    audioUrl:
-      "https://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a",
-    duration: 2,
-    fileSize: 52000,
+    languageCode: languages.arabic.code,
+    flag: languages.arabic.flag,
+    displayName: languages.arabic.display,
+    audioUrl: "/uploads/arabic.mp3",
+    duration: 25,
+    fileSize: 400000,
     sampleText:
       'في أرض إلدوريا القديمة، حيث السماوات المتلألئة والغابات التي تهمس بالأسرار للرياح، عاش تنين يُدعى زفيروس. ليس من النوع الذي "يحرق كل شيء"... بل كان لطيفًا وحكيمًا، بعيون كالنجوم القديمة.',
     metadata: {
@@ -36,13 +48,15 @@ const sampleAudioFiles = [
     },
   },
   {
-    language: "spanish",
-    audioUrl:
-      "https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg",
+    language: "russian",
+    languageCode: languages.russian.code,
+    flag: languages.russian.flag,
+    displayName: languages.russian.display,
+    audioUrl: "/uploads/russia.mp3",
     duration: 15,
     fileSize: 450000,
     sampleText:
-      'En la antigua tierra de Eldoria, donde los cielos brillaban y los bosques susurraban secretos al viento, vivía un dragón llamado Zephyros. No del tipo "quémalo todo"... sino que era gentil, sabio, con ojos como estrellas antiguas.',
+      'В древней земле Элдории, где небеса мерцали, а леса шептали секреты ветру, жил дракон по имени Зефирос. Не из тех, кто "все сжигает"... но он был добрым, мудрым, с глазами как старые звезды.',
     metadata: {
       quality: "high",
       sampleRate: "44100",
@@ -51,30 +65,18 @@ const sampleAudioFiles = [
   },
   {
     language: "japanese",
-    audioUrl:
-      "https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/music/start.ogg",
-    duration: 8,
-    fileSize: 180000,
+    languageCode: languages.japanese.code,
+    flag: languages.japanese.flag,
+    displayName: languages.japanese.display,
+    audioUrl: "/uploads/japanese.mp3",
+    duration: 20,
+    fileSize: 320000,
     sampleText:
       "エルドリアの古い土地で、空がきらめき、森が風に秘密をささやく場所に、ゼフィロスという名前のドラゴンが住んでいました。「すべてを燃やす」タイプではありません...彼は優しく、賢く、古い星のような目をしていました。",
     metadata: {
       quality: "high",
       sampleRate: "44100",
       bitrate: "320",
-    },
-  },
-  {
-    language: "french",
-    audioUrl:
-      "https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/fx/engine-2.ogg",
-    duration: 3,
-    fileSize: 82000,
-    sampleText:
-      "Dans l'ancienne terre d'Eldoria, où les cieux scintillaient et les forêts murmuraient des secrets au vent, vivait un dragon nommé Zephyros. Pas du genre \"brûle tout\"... mais il était doux, sage, avec des yeux comme de vieilles étoiles.",
-    metadata: {
-      quality: "medium",
-      sampleRate: "44100",
-      bitrate: "256",
     },
   },
 ];
