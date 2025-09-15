@@ -26,32 +26,30 @@ app.use(
   })
 );
 
-// Rate limiting - more lenient for development
+// CORS configuration
+app.use(
+  cors({
+    origin: ["https://audio-db-eleven-labs.vercel.app", "http://localhost:5173"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+    optionsSuccessStatus: 200
+  })
+);
+
+// Rate limiting - applied on API routes
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 1000, // Increased limit for development
-  message: {
-    error: "Too many requests from this IP, please try again later.",
-  },
+  max: 1000,
+  message: { error: "Too many requests from this IP, please try again later." },
 });
 app.use("/api", limiter);
-
-// CORS configuration
-const corsOptions = {
-  origin: "http://localhost:5173", // Vite's default development server port
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  optionsSuccessStatus: 200,
-};
-
-app.use(cors(corsOptions));
 
 // Body parsing middleware
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
-// Serve static files from public directory with proper MIME types
+// Serve static files (audio uploads)
 app.use(
   express.static("public", {
     setHeaders: (res, path) => {
@@ -75,7 +73,7 @@ app.use(
         });
       }
     },
-    maxAge: 31536000, // 1 year cache
+    maxAge: 31536000,
   })
 );
 
@@ -96,8 +94,8 @@ app.get("/", (req, res) => {
 // API routes
 app.use("/api", audioRoutes);
 
-// 404 handler - catch all unmatched routes
-app.use((req, res, next) => {
+// 404 handler
+app.use((req, res) => {
   res.status(404).json({
     error: "Route not found",
     path: req.originalUrl,
@@ -126,10 +124,10 @@ process.on("SIGTERM", () => {
   });
 });
 
+// Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`🌍 Environment: ${process.env.NODE_ENV || "development"}`);
   console.log(`🔗 API URL: http://localhost:${PORT}`);
-  console.log(`📊 Database: Connected to MongoDB`);
   console.log(`🎵 Test endpoint: http://localhost:${PORT}/api/audio-files`);
 });

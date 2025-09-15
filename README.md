@@ -1,5 +1,10 @@
 # AudioDB - Multi-Language Audio Management System
+<<<<<<< HEAD
 >**"Seamless Audio. Universal Languages. Infinite Possibilities."**
+=======
+
+> **"Seamless Audio. Universal Languages. Infinite Possibilities."**
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -20,12 +25,20 @@ This project demonstrates advanced full-stack development skills with production
 ## ✨ Key Features
 
 ### 🎵 Advanced Audio Management
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Multi-language audio file support** with 4 languages (English, Arabic, Russian, Japanese)
 - **RESTful API architecture** with comprehensive CRUD operations
 - **Metadata-rich storage** including duration, file size, quality metrics, and sample rates
 - **Intelligent audio organization** with language-based categorization and search
 
 ### 🎯 Interactive Frontend Components
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Audio Player Interface**: HTML5 audio controls with custom progress bars and time tracking
 - **Language Selector**: Dropdown with native language names, flags, and country codes
 - **Download Manager**: Direct audio file downloads with proper file naming
@@ -33,6 +46,10 @@ This project demonstrates advanced full-stack development skills with production
 - **Responsive Design**: Mobile-first approach with adaptive layouts across all devices
 
 ### 🔧 Backend Infrastructure
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Express.js Server**: Fast, scalable API with middleware for security and rate limiting
 - **MongoDB Integration**: Flexible document storage with Mongoose ODM for data validation
 - **CORS Configuration**: Cross-origin support for frontend-backend communication
@@ -40,6 +57,10 @@ This project demonstrates advanced full-stack development skills with production
 - **Environment Management**: Configurable settings for development and production
 
 ### 📱 User Experience Excellence
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Intuitive Navigation**: Tab-based interface with smooth transitions
 - **Audio Visualization**: Progress bars, time displays, and playback controls
 - **Error Recovery**: Graceful handling of network issues and invalid requests
@@ -48,6 +69,10 @@ This project demonstrates advanced full-stack development skills with production
 ## 🎨 Design System
 
 ### Visual Identity
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 The design system emphasizes clarity, accessibility, and modern aesthetics:
 
 - **Clean Interface**: Minimalist design with focus on functionality
@@ -56,6 +81,7 @@ The design system emphasizes clarity, accessibility, and modern aesthetics:
 - **Interactive Elements**: Hover states, transitions, and visual feedback
 
 ### Color Palette
+<<<<<<< HEAD
 ```css
 :root {
   --primary: hsl(220, 100%, 50%);      /* Professional Blue */
@@ -63,16 +89,34 @@ The design system emphasizes clarity, accessibility, and modern aesthetics:
   --accent: hsl(280, 100%, 70%);       /* Highlight Purple */
   --background: hsl(0, 0%, 98%);       /* Clean White */
   --text: hsl(220, 15%, 20%);          /* Dark Gray */
+=======
+
+```css
+:root {
+  --primary: hsl(220, 100%, 50%); /* Professional Blue */
+  --secondary: hsl(150, 80%, 45%); /* Success Green */
+  --accent: hsl(280, 100%, 70%); /* Highlight Purple */
+  --background: hsl(0, 0%, 98%); /* Clean White */
+  --text: hsl(220, 15%, 20%); /* Dark Gray */
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 }
 ```
 
 ### Typography
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Primary Font**: Inter with system font fallbacks
 - **Headings**: Bold, clear hierarchy (text-2xl to text-5xl)
 - **Body Text**: Readable contrast ratios with proper line spacing
 - **Code Elements**: Monospace font for technical content
 
 ### Responsive Breakpoints
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Mobile**: 640px and below
 - **Tablet**: 768px to 1023px
 - **Desktop**: 1024px to 1279px
@@ -81,24 +125,40 @@ The design system emphasizes clarity, accessibility, and modern aesthetics:
 ## 🛠️ Technical Stack
 
 ### Frontend Technology
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **React 18.3.1** with **TypeScript** for type-safe component development
 - **Vite 5.0** for lightning-fast development and optimized production builds
 - **Tailwind CSS 3.4.11** for utility-first styling and consistent design tokens
 - **React Query** for efficient server state management and caching
 
 ### Backend Architecture
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Node.js 18+** runtime environment with ES modules support
 - **Express.js 4.18.2** web framework with middleware ecosystem
 - **MongoDB 7.0** document database with Atlas cloud deployment
 - **Mongoose ODM** for schema validation and data modeling
 
 ### Development Tools
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **ESLint + Prettier** for code quality and consistent formatting
 - **TypeScript Strict Mode** for comprehensive type checking
 - **Git Hooks** for pre-commit quality assurance
 - **Environment Variables** for secure configuration management
 
 ### API & Networking
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **RESTful API Design** following industry best practices
 - **JSON Response Format** with consistent error handling
 - **CORS Middleware** for secure cross-origin requests
@@ -107,6 +167,10 @@ The design system emphasizes clarity, accessibility, and modern aesthetics:
 ## 🚀 Getting Started
 
 ### Prerequisites
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Node.js** 18.0 or higher
 - **MongoDB** (Local installation or MongoDB Atlas account)
 - **Git** for version control
@@ -133,6 +197,10 @@ npm run dev
 ### Environment Configuration
 
 **Backend (.env)**
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 ```env
 PORT=5000
 NODE_ENV=development
@@ -141,6 +209,10 @@ CORS_ORIGINS=http://localhost:3000,http://localhost:5173,http://127.0.0.1:5173;h
 ```
 
 **Frontend (.env)**
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 ```env
 VITE_API_BASE_URL= http://localhost:8080/
 VITE_APP_NAME=AudioDB
@@ -203,6 +275,7 @@ AudioDB-ElevenLabs/
 
 ### Core Endpoints
 
+<<<<<<< HEAD
 | Method | Endpoint | Description | Response |
 |--------|----------|-------------|----------|
 | `GET` | `/` | Health check and API status | Server information |
@@ -214,12 +287,25 @@ AudioDB-ElevenLabs/
 | `DELETE` | `/api/audio-files/:language` | Remove audio file | Deletion confirmation |
 | `GET` | `/api/health` | Detailed system health | System status metrics |
 
+=======
+| Method   | Endpoint                     | Description                 | Response               |
+| -------- | ---------------------------- | --------------------------- | ---------------------- |
+| `GET`    | `/`                          | Health check and API status | Server information     |
+| `GET`    | `/api/audio-files`           | Retrieve all audio files    | Complete audio catalog |
+| `GET`    | `/api/audio-files/:language` | Get audio by language code  | Single language data   |
+| `GET`    | `/api/languages`             | List available languages    | Language metadata      |
+| `POST`   | `/api/audio-files`           | Upload new audio file       | Creation confirmation  |
+| `PUT`    | `/api/audio-files/:language` | Update existing audio       | Update confirmation    |
+| `DELETE` | `/api/audio-files/:language` | Remove audio file           | Deletion confirmation  |
+| `GET`    | `/api/health`                | Detailed system health      | System status metrics  |
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 
 ## 🎵 Supported Languages & Features
 
 ### Language Support Matrix
 
 | Language | Code | Flag | Native Name | Audio Status | File Format | Duration |
+<<<<<<< HEAD
 |----------|------|------|-------------|--------------|-------------|----------|
 | English | EN | 🇺🇸 | English | ✅ Available | OGG | 0:30 |
 | Arabic | AR | 🇸🇦 | العربية | ✅ Available | MP3 | 0:40 |
@@ -227,6 +313,16 @@ AudioDB-ElevenLabs/
 | Russian | RU | 🇷🇺 | Русский | ✅ Available | MP3 | 0:30 |
 
 ### Audio Quality Standards
+=======
+| -------- | ---- | ---- | ----------- | ------------ | ----------- | -------- |
+| English  | EN   | 🇺🇸   | English     | ✅ Available | OGG         | 0:30     |
+| Arabic   | AR   | 🇸🇦   | العربية     | ✅ Available | MP3         | 0:40     |
+| Japanese | JA   | 🇯🇵   | 日本語      | ✅ Available | MP3         | 0:35     |
+| Russian  | RU   | 🇷🇺   | Русский     | ✅ Available | MP3         | 0:30     |
+
+### Audio Quality Standards
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Sample Rate**: 44.1 kHz standard
 - **Bitrate**: 320 kbps for high quality
 - **Format Support**: MP3, WAV, OGG, M4A
@@ -235,18 +331,30 @@ AudioDB-ElevenLabs/
 ## 📈 Performance & Optimization
 
 ### Core Web Vitals Targets
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Cumulative Layout Shift**: < 0.1
 - **First Input Delay**: < 100ms
 
 ### Optimization Strategies
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Code Splitting**: Route-based and component-based lazy loading
 - **Asset Optimization**: Compressed images and optimized bundle sizes
 - **API Caching**: Efficient server responses with proper cache headers
 - **Database Indexing**: Optimized MongoDB queries for fast retrieval
 
 ### Browser Compatibility
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Modern Browsers**: Full feature support (Chrome 90+, Firefox 88+, Safari 14+)
 - **Legacy Browsers**: Graceful degradation with core functionality
 - **Mobile Optimization**: Touch-friendly interface with responsive audio controls
@@ -254,6 +362,10 @@ AudioDB-ElevenLabs/
 ## 🛡️ Security & Reliability
 
 ### Security Implementation
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Input Validation**: Comprehensive data sanitization with Mongoose schemas
 - **Rate Limiting**: API protection against abuse (1000 requests per 15 minutes)
 - **CORS Configuration**: Secure cross-origin request handling
@@ -261,6 +373,10 @@ AudioDB-ElevenLabs/
 - **Error Handling**: Secure error responses without information leakage
 
 ### Data Protection
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **MongoDB Security**: Encrypted connections and access control
 - **API Security**: Request validation and response sanitization
 - **File Handling**: Secure audio file serving with proper headers
@@ -268,18 +384,30 @@ AudioDB-ElevenLabs/
 ## 🧪 Testing & Quality Assurance
 
 ### Code Quality Standards
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **TypeScript Strict Mode**: Comprehensive type checking
 - **ESLint Configuration**: Consistent code style enforcement
 - **Prettier Integration**: Automated code formatting
 - **Git Hooks**: Pre-commit quality checks
 
 ### Testing Strategy
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **API Testing**: Manual endpoint validation with Postman/curl
 - **Frontend Testing**: Component behavior verification
 - **Cross-Browser Testing**: Compatibility across major browsers
 - **Mobile Testing**: Responsive design validation on various devices
 
 ### Performance Monitoring
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Lighthouse Audits**: Regular performance and accessibility scoring
 - **Bundle Analysis**: JavaScript bundle size optimization
 - **Database Monitoring**: Query performance and connection health
@@ -335,6 +463,10 @@ npm run dev
 ## 🔧 Development Scripts
 
 ### Backend Commands
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 ```bash
 npm run dev          # Development server with nodemon
 npm start            # Production server
@@ -343,6 +475,10 @@ npm run test         # Run API tests
 ```
 
 ### Frontend Commands
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 ```bash
 npm run dev          # Vite development server
 npm run build        # Production build
@@ -380,6 +516,10 @@ git push origin feature/audio-streaming-api
 ```
 
 ### Code Standards
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **TypeScript First**: All new components must use TypeScript
 - **Responsive Design**: Mobile-first approach for all UI components
 - **API Consistency**: Follow RESTful conventions for all endpoints
@@ -387,6 +527,10 @@ git push origin feature/audio-streaming-api
 - **Testing**: Verify functionality across different browsers and devices
 
 ### Contribution Areas
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Audio Format Support**: Add support for additional audio formats
 - **Language Expansion**: Implement new language support
 - **UI/UX Improvements**: Enhance user interface and experience
@@ -397,6 +541,10 @@ git push origin feature/audio-streaming-api
 ## 📊 Project Statistics
 
 ### Codebase Metrics
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Total Lines of Code**: ~3,500+
 - **React Components**: 12+
 - **API Endpoints**: 8
@@ -406,6 +554,10 @@ git push origin feature/audio-streaming-api
 - **Mobile Responsive**: ✅ Complete
 
 ### Technology Distribution
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Frontend**: React, TypeScript, Tailwind CSS
 - **Backend**: Node.js, Express.js, MongoDB
 - **Tools**: Vite, ESLint, Prettier
@@ -414,18 +566,30 @@ git push origin feature/audio-streaming-api
 ## 🔗 Links & Resources
 
 ### Project Links
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **Live Demo**: [https://audiodb-elevenlabs.vercel.app](https://audiodb-elevenlabs.vercel.app)
 - **Backend API**: [https://audiodb-backend.render.com](https://audiodb-backend.onrender.com)
 - **GitHub Repository**: [https://github.com/Jaswanthk07/AudioDB-ElevenLabs](https://github.com/Jaswanthk07/AudioDB-ElevenLabs)
 - **Issue Tracker**: [Report bugs or request features](https://github.com/Jaswanthk07/AudioDB-ElevenLabs/issues)
 
 ### Documentation Resources
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - **API Documentation**: Detailed endpoint specifications and examples
 - **Component Library**: React component API and usage patterns
 - **Database Schema**: MongoDB collection structure and relationships
 - **Deployment Guide**: Step-by-step production deployment instructions
 
 ### Technology Documentation
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d3c880 (fix: Update CORS configuration for Vercel frontend)
 - [React Documentation](https://react.dev/) - Modern React patterns and best practices
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/) - Type system and advanced features
 - [Tailwind CSS Docs](https://tailwindcss.com/docs) - Utility-first CSS framework
