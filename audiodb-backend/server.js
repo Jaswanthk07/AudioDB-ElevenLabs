@@ -28,19 +28,7 @@ app.use(
 
 // CORS configuration
 app.use(
-  cors({
-    origin: [
-      "https://audiodb-elevenlabs.vercel.app",
-      "http://localhost:5173",
-      "http://localhost:3000",
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization", "Origin", "Accept"],
-    exposedHeaders: ["Content-Range", "X-Content-Range"],
-    credentials: false, // Changed to false since we're not using cookies
-    optionsSuccessStatus: 200,
-    maxAge: 86400, // Cache preflight request results for 24 hours
-  })
+  cors()
 );
 
 // Enable pre-flight requests for all routes
