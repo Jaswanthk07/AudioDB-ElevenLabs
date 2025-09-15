@@ -1,5 +1,10 @@
-import express from "express";
-import mongoose from "mongoose";
+import express from "express// CORS configuration - Allow all origins (for development/debugging)
+app.use(cors({
+  origin: '*',
+  methods: '*',
+  allowedHeaders: '*',
+  credentials: true
+}));se from "mongoose";
 import cors from "cors";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
@@ -13,35 +18,20 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Security middleware
+// Security middleware with relaxed settings for CORS
 app.use(
   helmet({
     crossOriginResourcePolicy: { policy: "cross-origin" },
-    contentSecurityPolicy: {
-      directives: {
-        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        "media-src": ["'self'", "http:", "https:"],
-      },
-    },
+    contentSecurityPolicy: false // Disabled for development
   })
 );
 
-// CORS configuration
-const corsOptions = {
-  origin: [
-    "https://audiodb-elevenlabs.vercel.app",
-    "http://localhost:5173",
-    "http://localhost:3000",
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization", "Origin", "Accept"],
-  credentials: false,
-};
-
-app.use(cors(corsOptions));
-
-// Pre-flight requests
-app.options("/api/*", cors(corsOptions));
+// CORS configuration - Allow all origins (for development/debugging)
+app.use(cors({
+  origin: '*',
+  methods: '*',
+  allowedHeaders: '*'
+}));
 
 // Rate limiting - applied on API routes
 const limiter = rateLimit({
