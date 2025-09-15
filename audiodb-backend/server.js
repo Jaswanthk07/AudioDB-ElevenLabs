@@ -29,11 +29,12 @@ app.use(
 // CORS configuration
 app.use(
   cors({
-    origin: ["https://audio-db-eleven-labs.vercel.app", "http://localhost:5173"],
+    origin: true, // Allow all origins temporarily for debugging
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 200,
+    maxAge: 86400, // Cache preflight request results for 24 hours
   })
 );
 
@@ -80,6 +81,10 @@ app.use(
 // Connect to MongoDB
 connectDB();
 
+// Test endpoint
+app.get("/api/test", (req, res) => {
+  res.json({ message: "API is working", timestamp: new Date().toISOString() });
+});
 // Health check endpoint
 app.get("/", (req, res) => {
   res.json({

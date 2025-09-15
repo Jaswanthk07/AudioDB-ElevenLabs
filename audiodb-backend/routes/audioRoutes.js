@@ -5,7 +5,9 @@ const router = express.Router();
 
 // GET /api/audio-files - Get all audio files
 router.get("/audio-files", async (req, res) => {
+  console.log("Received request for audio files");
   try {
+    console.log("Fetching active languages...");
     const audioFiles = await Audio.getActiveLanguages();
 
     // Transform to the requested format
