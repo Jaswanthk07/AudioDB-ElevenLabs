@@ -27,12 +27,21 @@ app.use(
 );
 
 // CORS configuration
-app.use(
-  cors()
-);
+const corsOptions = {
+  origin: [
+    "https://audiodb-elevenlabs.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:3000",
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "Origin", "Accept"],
+  credentials: false,
+};
 
-// Enable pre-flight requests for all routes
-app.options("*", cors());
+app.use(cors(corsOptions));
+
+// Pre-flight requests
+app.options("/api/*", cors(corsOptions));
 
 // Rate limiting - applied on API routes
 const limiter = rateLimit({
