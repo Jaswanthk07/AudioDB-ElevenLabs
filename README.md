@@ -136,13 +136,13 @@ npm run dev
 ```env
 PORT=5000
 NODE_ENV=development
-MONGODB_URI=mongodb+srv://jaswanth2007k_db_user:jaswanth%402004ik@myappdb.pwrboju.mongodb.net/audiodb?retryWrites=true&w=majority&appName=MyAppDB
-CORS_ORIGINS=http://localhost:3000,http://localhost:5173,http://127.0.0.1:5173
+MONGODB_URI=MONGODB_URI=mongodb+srv://yourdbusername:yourdbpassword@yourcluster.mongodb.net/yourdbname?retryWrites=true&w=majority
+CORS_ORIGINS=http://localhost:3000,http://localhost:5173,http://127.0.0.1:5173;http://localhost:8080/
 ```
 
 **Frontend (.env)**
 ```env
-VITE_API_BASE_URL=http://localhost:5000
+VITE_API_BASE_URL= http://localhost:8080/
 VITE_APP_NAME=AudioDB
 VITE_APP_VERSION=1.0.0
 ```
@@ -309,7 +309,7 @@ PORT=10000
 vercel
 
 # Environment Variables
-VITE_API_BASE_URL=https://your-backend-domain.render.com
+VITE_API_BASE_URL= https://audiodb-backend.onrender.com/
 VITE_APP_NAME=AudioDB
 ```
 
@@ -435,7 +435,7 @@ git push origin feature/audio-streaming-api
 
 ## 🙏 Acknowledgments
 
-This project was built with inspiration and support from the open-source community:
+This project was built with thought and support from the open-source community,
 
 - **React Team** for providing an excellent frontend framework
 - **MongoDB Team** for robust database solutions
