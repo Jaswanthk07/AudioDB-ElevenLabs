@@ -29,14 +29,22 @@ app.use(
 // CORS configuration
 app.use(
   cors({
-    origin: true, // Allow all origins temporarily for debugging
+    origin: [
+      "https://audiodb-elevenlabs.vercel.app",
+      "http://localhost:5173",
+      "http://localhost:3000",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization", "Origin", "Accept"],
+    exposedHeaders: ["Content-Range", "X-Content-Range"],
+    credentials: false, // Changed to false since we're not using cookies
     optionsSuccessStatus: 200,
     maxAge: 86400, // Cache preflight request results for 24 hours
   })
 );
+
+// Enable pre-flight requests for all routes
+app.options("*", cors());
 
 // Rate limiting - applied on API routes
 const limiter = rateLimit({
@@ -98,6 +106,19 @@ app.get("/", (req, res) => {
 
 // API routes
 app.use("/api", audioRoutes);
+
+// CORS error handler
+app.use((err, req, res, next) => {
+  if (err.name === "CORSError") {
+    console.error("CORS Error:", err);
+    return res.status(403).json({
+      error: "CORS error",
+      message: err.message,
+      origin: req.headers.origin,
+    });
+  }
+  next(err);
+});
 
 // 404 handler
 app.use((req, res) => {
